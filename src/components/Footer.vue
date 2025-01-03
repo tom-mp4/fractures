@@ -19,12 +19,11 @@
         </div>
       </div>
       <div class="footerMenu">
-        <h3>Ressources</h3>
+        <h3>Navigation</h3>
         <div>
-          <router-link to="#">Séances Fractures</router-link>
-          <router-link to="/about">Programmation</router-link>
-          <a href="/jobs">À Propos</a>
-          <router-link to="/contact">Réservation</router-link>
+          <a href="#">Séances Fractures</a>
+          <a href="#programmation">Programmation</a>
+          <a href="#description">À Propos</a>
         </div>
       </div>
       <div class="footerMenu">
@@ -70,7 +69,7 @@
     display: flex;
     justify-content: space-between;
     width: 70%;
-    padding: 5rem 0;
+    padding: 3rem 0;
     height: fit-content;
 
     .footerColumn {
@@ -141,7 +140,7 @@
     align-items: center;
     justify-content: space-between;
     width: 70%;
-    padding: 3rem 0;
+    padding: 2rem 0;
 
     p {
       color: white;
@@ -169,6 +168,8 @@
 
 @media (max-width: 800px) {
   .footer {
+    width: 85%;
+
     .footerTop {
       flex-direction: column;
       gap: 3rem;

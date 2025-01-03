@@ -4,7 +4,18 @@
 
 <template>
   <div class="programming">
-    <h2>Programmation</h2>
+    <div class="programmingDescription">
+      <h2>Programmation</h2>
+      <div class="aboutProgrammingDescription">
+        <h3>sexualités & représentations</h3>
+        <p>
+          Explorer les sexualités et leurs représentations, c'est questionner les normes,
+          déconstruire les tabous et refléter la diversité des expériences humaines.
+          Ce thème permet de donner la parole à des identités souvent invisibilisées,
+          tout en ouvrant des perspectives nouvelles sur l'intimité, le désir et l'identité.
+        </p>
+      </div>
+    </div>
     <div class="movieGrid">
       <a href="" class="moviePoster">
         <img src="@/assets/posters/adial.jpg" alt="Poster A Day In A Life">
@@ -29,19 +40,41 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 6rem;
 
-  h2 {
-    font-family: Syne, sans-serif;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 600;
+  .programmingDescription {
+    display: flex;
+    justify-content: space-between;
+    width: 75vw;
+
+    h2 {
+      font-family: Syne, sans-serif;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .aboutProgrammingDescription {
+      display: flex;
+      flex-direction: column;
+      width: 55%;
+      gap: 0.5rem;
+
+      h3 {
+        font-family: Syne, sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #aeaeae;
+      }
+    }
   }
 
   .movieGrid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: calc(4 * 300px + 3 * 2rem);
     gap: 2rem;
-    margin-top: 2rem;
     width: 75vw;
 
     .moviePoster {
@@ -60,8 +93,23 @@
 }
 
 @media (max-width: 800px) {
-  .movieGrid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  .programming .programmingDescription {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 3rem;
+    width: 85vw;
+
+    h2 {
+      text-align: center;
+    }
+
+    .aboutProgrammingDescription {
+      width: 100%;
+      font-size: 16px;
+      gap: 0.6rem;
+    }
   }
 }
 

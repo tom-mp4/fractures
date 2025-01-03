@@ -5,6 +5,7 @@ import Programmation from '@/components/Home/Programmation.vue';
 import Footer from '@/components/Footer.vue';
 import FracturesDescription from '@/components/Home/FracturesDescription.vue';
 import Trailer from '@/components/Home/Trailer.vue';
+import Booking from '@/components/Home/Booking.vue';
 
 </script>
 
@@ -17,6 +18,7 @@ import Trailer from '@/components/Home/Trailer.vue';
     <FracturesDescription id="description" />
     <Trailer />
     <div class="line"></div>
+    <Booking id="booking" />
     <Footer />
   </div>
 </template>
@@ -39,6 +41,13 @@ import Trailer from '@/components/Home/Trailer.vue';
     width: 90%;
     height: 1px;
     background-color: #aeaeae;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .home .navbar {
+    top: 1.5rem;
   }
 }
 

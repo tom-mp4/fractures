@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 0.8rem 0.8rem 3rem;
   width: 70%;
   border-radius: 100px;
   border: 1px solid gray;
@@ -78,7 +78,7 @@
       color: white;
       text-decoration: none;
       padding: 0.8em 1.2em;
-      border-radius: 10px;
+      border-radius: 100px;
       transition: 0.3s ease-in-out;
 
       &:hover {
@@ -87,6 +87,32 @@
       }
     }
   }
+}
+
+@media (max-width: 800px) {
+
+  .navbar {
+    padding: 0.6rem 0.6rem 0.6rem 1.3rem;
+    width: 85%;
+    border-radius: 100px;
+    border: 1px solid gray;
+
+    .logo {
+      width: 9rem;
+    }
+
+    .navbar-menu {
+      .button {
+        display: none;
+      }
+
+      .cta {
+        padding: 0.6em 1em;
+        font-size: 14px;
+      }
+    }
+  }
+
 }
 
 </style>

@@ -64,7 +64,7 @@
     .aboutFractureDescription {
       width: 100%;
       font-size: 16px;
-      gap: 2rem;
+      gap: 0.6rem;
     }
   }
 }
