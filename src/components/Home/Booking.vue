@@ -92,4 +92,42 @@
   }
 }
 
+@media (max-width: 800px) {
+
+  .booking {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .cinemaItem {
+      padding: 1rem;
+      width: 85vw;
+
+      .bookingInfos {
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      .line {
+        width: 50%;
+      }
+
+      .timeInfos {
+        h4 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
 </style>
