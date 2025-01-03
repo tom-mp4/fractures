@@ -21,10 +21,10 @@
       <div class="footerMenu">
         <h3>Ressources</h3>
         <div>
-          <router-link to="/fractures">Séances Fractures</router-link>
-          <router-link to="/about">Informations & Entreprise</router-link>
-          <a href="/jobs">Recrutements</a>
-          <router-link to="/contact">Contact</router-link>
+          <router-link to="#">Séances Fractures</router-link>
+          <router-link to="/about">Programmation</router-link>
+          <a href="/jobs">À Propos</a>
+          <router-link to="/contact">Réservation</router-link>
         </div>
       </div>
       <div class="footerMenu">
@@ -32,7 +32,6 @@
         <div>
           <router-link to="/privacy">Politique de confidentialité</router-link>
           <router-link to="/legal">Mentions légales</router-link>
-          <router-link to="/contract">Contrats et Engagements</router-link>
         </div>
       </div>
     </div>
@@ -135,10 +134,6 @@
         }
       }
     }
-  }
-
-  #footerLine {
-    border-bottom-color: #f06c13;
   }
 
   .footerBottom {

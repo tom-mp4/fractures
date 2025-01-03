@@ -5,15 +5,15 @@
   <div class="navbar">
     <img class="logo" src="@/assets/logo/fractures.svg" alt="CMJ Logo" />
     <div class="navbar-menu">
-      <router-link class="button" to="/">
-        Programation
-      </router-link>
-      <router-link class="button" to="/">
+      <a class="button" href="#programmation">
+        Programmation
+      </a>
+      <a class="button" href="#description">
         À Propos
-      </router-link>
-      <router-link class="cta" to="/">
+      </a>
+      <a class="cta" href="#booking">
         Réserver un Place
-      </router-link>
+      </a>
     </div>
   </div>
 </template>

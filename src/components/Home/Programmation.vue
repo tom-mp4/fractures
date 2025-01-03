@@ -59,4 +59,10 @@
   }
 }
 
+@media (max-width: 800px) {
+  .movieGrid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
 </style>
