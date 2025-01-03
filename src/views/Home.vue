@@ -1,18 +1,33 @@
+<script setup>
+import Navbar from '@/components/Navbar.vue';
+import VideoLanding from '@/components/Home/VideoLanding.vue';
+import Programmation from '@/components/Home/Programmation.vue';
+import Footer from '@/components/Footer.vue';
+
+</script>
+
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navbar class="navbar" />
+    <VideoLanding />
+    <Programmation />
+    <Footer />
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+<style lang="scss" scoped>
 
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld,
-  },
-};
-</script>
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20vh;
+
+  .navbar {
+    z-index: 2;
+    position: fixed;
+    top: 3rem;
+  }
+}
+
+</style>
