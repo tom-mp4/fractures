@@ -46,8 +46,12 @@ import Booking from '@/components/Home/Booking.vue';
 
 @media (max-width: 800px) {
 
-  .home .navbar {
-    top: 1.5rem;
+  .home {
+    gap: 13vh;
+
+    .navbar {
+      top: 1.5rem;
+    }
   }
 }
 

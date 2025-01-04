@@ -13,4 +13,11 @@
   height: 65vh;
 }
 
+@media (max-width: 800px) {
+  .trailer {
+    width: 90%;
+    height: 25vh;
+  }
+}
+
 </style>

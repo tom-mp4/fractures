@@ -28,6 +28,11 @@ body {
   color: white;
 }
 
+.greyLine {
+  border-bottom: 1px solid #737373;
+  width: 100%;
+}
+
 </style>
 <script setup>
 </script>

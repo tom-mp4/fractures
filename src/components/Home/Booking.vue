@@ -69,7 +69,8 @@
 
     .line {
       width: 60%;
-      border-bottom: solid 1px #aeaeae;
+      height: 1px;
+      background-color: #aeaeae;
     }
 
     .timeInfos {
@@ -96,7 +97,7 @@
 
   .booking {
     h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     .cinemaItem {
@@ -104,20 +105,23 @@
       width: 85vw;
 
       .bookingInfos {
+        width: 50%;
         h3 {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
 
         p {
-          font-size: 0.9rem;
+          font-size: 0.7rem;
         }
       }
 
       .line {
-        width: 50%;
+        width: 1.3px;
+        height: 50px;
       }
 
       .timeInfos {
+        width: 50%;
         h4 {
           font-size: 1rem;
         }

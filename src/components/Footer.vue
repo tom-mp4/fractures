@@ -21,7 +21,7 @@
       <div class="footerMenu">
         <h3>Navigation</h3>
         <div>
-          <a href="#">Séances Fractures</a>
+          <a href="/">Séances Fractures</a>
           <a href="#programmation">Programmation</a>
           <a href="#description">À Propos</a>
         </div>
@@ -167,13 +167,14 @@
 }
 
 @media (max-width: 800px) {
+
   .footer {
     width: 85%;
 
     .footerTop {
       flex-direction: column;
-      gap: 3rem;
-      width: 70%;
+      gap: 2rem;
+      width: 80%;
 
       .footerColumn {
         width: 100%;
@@ -185,18 +186,32 @@
         }
 
         p {
+          font-size: 14px;
           line-height: 20px;
         }
       }
 
       .footerMenu {
         width: fit-content;
+
+        h3 {
+          font-size: 18px;
+        }
+
+        a {
+          font-size: 14px;
+        }
       }
     }
 
     .footerBottom {
       width: 70%;
       text-align: center;
+      padding-top: 0;
+
+      p {
+        font-size: 14px;
+      }
 
       #footerToTopButton {
         display: none;
