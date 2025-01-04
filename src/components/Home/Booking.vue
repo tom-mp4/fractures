@@ -57,7 +57,7 @@
 
       h3 {
         font-family: Syne, sans-serif;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: 700;
       }
 
